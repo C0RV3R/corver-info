@@ -1,116 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" href="assets/images/web.png">
-  <title>CoRVeR - Info</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CoRVeR - Info</title>
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <div class="container">
-    <main id="page-content">
-      <!-- PAGE 1 -->
-      <section class="page active" id="page1">
-        <img src="assets/images/info.png" alt="Info Image" class="main-image" />
-      </section>
+<div class="container">
+  <main id="page-content">
 
-      <!-- PAGE 2 -->
-      <section class="page" id="page2">
-        <div class="card">
-          <h2>Merhaba!</h2>
-          <p>My name is <strong><h8>Emre Selvitopu</h8></strong>, but I go by <strong><h8>CoRVeR</h8></strong> online. I'm a software engineer.</p>
-          <p>I began my coding journey at the age of 13, and since then, my passion for programming has only grown. I'm dedicated to honing my skills every day, constantly challenging myself to learn and improve.</p>
+    <section class="page active" id="page1">
+      <img src="assets/images/info.png" alt="Info Image" class="main-image">
+    </section>
+
+    <section class="page" id="page2">
+      <div class="card">
+        <h2>Merhaba!</h2>
+        <p>My name is <strong>Emre Selvitopu</strong>, but I go by <strong>CoRVeR</strong> online. I'm a software engineer.</p>
+        <p>I began my coding journey at 13, and since then, my passion for programming has grown. I am dedicated to improving my skills every day.</p>
+      </div>
+    </section>
+
+    <section class="page" id="page3">
+      <div class="card">
+        <h2>Software Skills</h2>
+        <div class="skills-container">
+          <div class="skill-category">
+            <h3>Pro</h3>
+            <p>LUA</p>
+          </div>
+          <div class="skill-category">
+            <h3>Mid</h3>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>C</p>
+          </div>
+          <div class="skill-category">
+            <h3>Starter</h3>
+            <p>Java</p>
+            <p>JavaScript</p>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- PAGE 3 -->
-<section class="page" id="page3">
-  <div class="card">
-    <h2>Software Skills</h2>
-
-    <div class="skills-container">
-
-      <div class="skill-category">
-        <h3>Pro</h3>
-        <p>LUA</p>
+    <section class="page" id="page4">
+      <div class="card" id="projects-main">
+        <h2>Projects</h2>
+        <div class="projects-container">
+          <button class="project-btn" data-target="project-lua">Projects with LUA</button>
+          <button class="project-btn" data-target="project-web">Projects with HTML, CSS, JS</button>
+          <button class="project-btn" data-target="project-java">Projects with Java</button>
+        </div>
       </div>
 
-      <div class="skill-category">
-        <h3>Mid</h3>
-        <p>HTML</p>
-        <p>CSS</p>
-        <p>C</p>
+      <div class="card project-content" id="project-lua" style="display:none;">
+        <h2>Projects with LUA</h2>
+        <p>This is an in-game mod with Admin menu, Killstreak ladder, custom AI bots, emojis, and more. Over <strong>8,000</strong> players.</p>
+        <button class="show-images-btn">Related Images</button>
+        <div class="project-images" style="display:none;">
+          <img src="assets/images/LUA/1.PNG" alt="LUA 1" class="project-image">
+          <img src="assets/images/LUA/2.PNG" alt="LUA 2" class="project-image">
+        </div>
+        <button class="back-btn" data-target="projects-main">← Back to Projects</button>
       </div>
 
-      <div class="skill-category">
-        <h3>Starter</h3>
-        <p>Java</p>
-        <p>JavaScript</p>
+      <div class="card project-content" id="project-web" style="display:none;">
+        <h2>Projects with HTML, CSS, JS</h2>
+        <ul>
+          <li>QR Menu</li>
+          <li>Real Estate Web</li>
+          <li>Organization Web</li>
+          <li>Forum</li>
+          <li>My Site</li>
+        </ul>
+        <button class="back-btn" data-target="projects-main">← Back to Projects</button>
       </div>
 
+      <div class="card project-content" id="project-java" style="display:none;">
+        <h2>Projects with Java</h2>
+        <p>Collection of beginner and intermediate Java applications focusing on algorithms, OOP structure, and UI.</p>
+        <button class="back-btn" data-target="projects-main">← Back to Projects</button>
+      </div>
+    </section>
+
+    <section class="page" id="page5">
+      <div class="card">
+        <div class="profile-pic-container">
+          <img src="assets/images/me.jpg" alt="My Photo" class="profile-pic">
+        </div>
+        <h2>Contact Me</h2>
+        <div class="contact-card">
+          <div class="contact-item">
+            <img src="assets/images/icons/mail.png" alt="Mail Icon" class="contact-icon">
+            <a href="mailto:emreselvitopu@icloud.com" class="contact-link">emreselvitopu@icloud.com</a>
+            <a href="https://www.linkedin.com/in/emre-selvitopu-a21971357/" target="_blank">
+              <img src="assets/images/icons/linkedin.png" alt="LinkedIn Icon" class="contact-icon">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="nav-buttons">
+      <button id="prevBtn" class="arrow-btn">&#8592;</button>
+      <button id="nextBtn" class="arrow-btn">&#8594;</button>
     </div>
-  </div>
-</section>
-
-
-
-
-
-      <!-- PAGE 4 -->
-     <section class="page" id="page5">
-  <div class="card">
-    <h2>Projects</h2>
-
-    <div class="projects-container">
-      <a href="assets/html/project-lua.html" class="project-btn">Projects with LUA</a>
-      <a href="assets/html/project-web.html" class="project-btn">Projects with HTML, CSS, JS</a>
-      <a href="assets/html/project-java.html" class="project-btn">Projects with Java</a>
+    <div class="progress-bar">
+      <div class="progress-fill" id="progress"></div>
     </div>
-  </div>
-</section>
-
-
-      <!-- PAGE 5 -->
-<section class="page" id="page5">
-  <div class="card">
-    
-    <!-- Profil Foto -->
-    <div class="profile-pic-container">
-      <img src="assets/images/me.jpg" alt="My Photo" class="profile-pic" />
-    </div>
-
-    <h2>Contact Me</h2>
-    <div class="contact-card">
-
-      <div class="contact-item">
-        <img src="assets/images/icons/mail.png" alt="Mail Icon" class="contact-icon">
-        <a href="mailto:emreselvitopu@icloud.com" class="contact-link">emreselvitopu@icloud.com</a>
-        <br>
-        <a href="https://www.linkedin.com/in/emre-selvitopu-a21971357/" target="_blank">
-        <img src="assets/images/icons/linkedin.png" alt="LinkedIn Icon" class="contact-icon">
-        </a>
-      </div>
-      </div>
-
-    </div>
-    
-  </div>
-</section>
-
-    </main>
-
-    <footer>
-      <div class="nav-buttons">
-        <button id="prevBtn" class="arrow-btn">&#8592;</button>
-        <button id="nextBtn" class="arrow-btn">&#8594;</button>
-      </div>
-      <div class="progress-bar">
-        <div class="progress-fill" id="progress"></div>
-      </div>
-    </footer>
-  </div>
-
-  <script src="assets/script/script.js"></script>
+  </footer>
+</div>
+<script src="assets/script/script.js"></script>
 </body>
 </html>
